@@ -1,0 +1,22 @@
+name: 'Annotation generator'
+description: 'Creates the pr annotations via the code check github app'
+inputs:
+  annotations:
+    description: 'Annotations as json which should be added to the PR'
+    required: true
+  commitSha:
+    description: 'The commit sha of the current commit'
+    required: true
+  owner:
+    description: 'The owner of the repository'
+    required: false
+  repoName:
+    description: 'The name of the repository'
+    required: false
+  checkName:
+    description: 'The name of the check'
+    required: false
+    default: 'Annotations'
+runs:
+  using: 'node16'
+  main: 'src/index.js'
