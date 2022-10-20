@@ -6,8 +6,12 @@ It adds the annotations via the P&M code-checker-bot
 ##  Usage
 
 Annotations must be an array of 
-`{path: string, startLine: string|int, endline: string|int, annotationsLevel: failure|warning|notice, message: string}`
 
+```javascript
+{path: string, startLine: string|int, endline: string|int, annotationsLevel: failure|warning|notice, message: string}
+```
+
+Example usage as a step in a workflow file
 ```yml
 - name: Add Annotations
   uses: pmagentur/linting-annotations@master
