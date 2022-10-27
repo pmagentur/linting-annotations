@@ -20,7 +20,7 @@ const convertAnnotation = (annotation) => {
     return {
         'path': annotation.path,
         'start_line': parseInt(annotation.startLine),
-        'end_line': parseInt(annotation.endLine),
+        'end_line': parseInt(annotation.startLine), // Use startLine as endLine because github does not support multiline annotations
         'annotation_level': annotation.annotationLevel,
         'message': annotation.message
     };
