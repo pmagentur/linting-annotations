@@ -1,0 +1,23 @@
+name: Github Linting Annotation
+id: 'ari:cloud:compass:fc30d626-c7c8-44e4-9b1c-e1cc1894dd1e:component/f75966b7-3ca1-4049-bdb7-40fe65ef2a2a/1cb60f02-9927-4f51-975c-a12834185e20'
+description: 'To see the errors and warnings of the linting, we need to add them to the pull request as annotations. We do this with our annotation action.'
+configVersion: 1
+typeId: SERVICE
+ownerId: 'ari:cloud:teams::team/f4015c13-0008-4222-b292-b0e00807b2cd'
+fields:
+  lifecycle: Active
+  tier: 3
+links:
+  - name: null
+    type: REPOSITORY
+    url: 'https://github.com/pmagentur/linting-annotations'
+  - name: Slack
+    type: CHAT_CHANNEL
+    url: 'https://app.slack.com/client/T0G2FAWMR/C04NXD0Q1FA'
+  - name: Confluence
+    type: DOCUMENT
+    url: 'https://pmsoftware.atlassian.net/wiki/spaces/EN/pages/3643342957/WIP+Linting+Github'
+relationships: {}
+labels:
+  - linting
+customFields: null
